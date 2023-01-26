@@ -11,36 +11,42 @@ four years after it was abandoned, so it might not be complete or accurate.
 
 If anyone is interested in more details, just contact the author.
 
-# Pre-requisites
+# Environment
 
-## Language
+- Windows 10
 
-Python
+- Install Python 3.7
+  - https://www.python.org/downloads/release/python-379/
+  - Install to C:\Python37
+  - Add to PATH:
+    - Window key, System Properties, Environment Variables, Edit
+    - Put these before all other Python related paths:
+        - C:\Python33\Scripts\
+        - C:\Python33\
 
-## Libararies
+- Install FBX Python SDK
+  - Go to http://www.autodesk.com/fbx
+  - "Get FBX SDK"
+  - Download and install "FBX SDK 2020.3.2 Python"
+  - Copy FBX library files to Python site-packages. Example:
+    - Copy the contents of C:\Program Files\Autodesk\FBX\FBX Python SDK\2020.3.2\lib\Python37_x64
+    - to C:\Python37\Lib\site-packages
+    - Note: If the Autodesk folder name is not `Python37*`, might need newer version of Python
 
-This project really ought to have a requirements.txt file or a Pipfile.
+- Verify
+  - New Command Line window
+  - `python --version`
+    - output: `Python 3.7.9`
+  - `python`
+  - `>>> import fbx`
+  - `>>> help(fbx)`
+    - output: should show a ton of classes
 
-But I'm embarrassed to say, it doesn't.
+- Install FF7 JSON files
+  - Use external tool (TO DO: Explain) to translate FF7 native to JSON
+  - For more information, please contact: picklejar76@gmail.com
 
-This Python app will need to `import fbx`.
-
-That library is provided by Autodesk, if I remember correctly.
-
-For now, it's up to the reader to install this Python library,
-and any other libraries that might be imported.
-
-## External tool required
-
-This project also depends on a separate tool to translate FF7 
-from native format to an intermediate JSON format, which is the starting
-point for THIS app.
-
-If I remember correctly, this is a tool within the kujata project.
-
-For more information, please contact: picklejar76@gmail.com
-
-# Usage
+# Run
 
 Translation order is: FF7 native -> JSON -> FBX
 
@@ -49,6 +55,10 @@ to translate FF7 native files -> JSON.
 
 2. Use fbxTranslator.py in THIS project
 to translate JSON -> FBX.
+
+`python main.py`
+
+Does not require `requirements.txt` or `Pipfile`.
 
 # FAQ
 

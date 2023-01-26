@@ -3,8 +3,6 @@ import sys
 import math
 import json
 
-# TODO: import fbx differently so that you don't need to add "fbx." in front of everything
-
 # read data from xxxx.yyy.json into an object, e.g. AAAA.HRC.json or AAFE.A.json
 def readJsonDataFromFile(jsonFilename):
     with open(jsonFilename) as f:

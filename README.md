@@ -2,15 +2,6 @@
 
 Translates Final Fantasy VII graphics assets to FBX format.
 
-# Overview
-
-Sorry, this project was abandoned in early 2019 and never cleaned up.
-
-All in the information in this README is being recollected in 2023,
-four years after it was abandoned, so it might not be complete or accurate.
-
-If anyone is interested in more details, just contact the author.
-
 # Environment
 
 - Windows 10
@@ -57,8 +48,6 @@ to translate FF7 native files -> JSON.
 to translate JSON -> FBX.
 
 `python main.py`
-
-Does not require `requirements.txt` or `Pipfile`.
 
 # FAQ
 

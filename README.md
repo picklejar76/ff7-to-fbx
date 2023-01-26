@@ -8,20 +8,20 @@ Translates Final Fantasy VII graphics assets to FBX format.
 
 - Install Python 3.7
   - https://www.python.org/downloads/release/python-379/
-  - Install to C:\Python37
+  - Install to `C:\Python37`
   - Add to PATH:
     - Window key, System Properties, Environment Variables, Edit
     - Put these before all other Python related paths:
-        - C:\Python33\Scripts\
-        - C:\Python33\
+        - `C:\Python37\Scripts\`
+        - `C:\Python37\`
 
 - Install FBX Python SDK
   - Go to http://www.autodesk.com/fbx
   - "Get FBX SDK"
   - Download and install "FBX SDK 2020.3.2 Python"
-  - Copy FBX library files to Python site-packages. Example:
-    - Copy the contents of C:\Program Files\Autodesk\FBX\FBX Python SDK\2020.3.2\lib\Python37_x64
-    - to C:\Python37\Lib\site-packages
+  - Copy FBX library files to Python `site-packages`. Example:
+    - Copy the contents of `C:\Program Files\Autodesk\FBX\FBX Python SDK\2020.3.2\lib\Python37_x64`
+    - to `C:\Python37\Lib\site-packages`
     - Note: If the Autodesk folder name is not `Python37*`, might need newer version of Python
 
 - Verify
@@ -33,21 +33,17 @@ Translates Final Fantasy VII graphics assets to FBX format.
   - `>>> help(fbx)`
     - output: should show a ton of classes
 
-- Install FF7 JSON files
-  - Use external tool (TO DO: Explain) to translate FF7 native to JSON
-  - For more information, please contact: picklejar76@gmail.com
-
 # Run
 
 Translation order is: FF7 native -> JSON -> FBX
 
-1. Use ff7Translator tool from an EXTERNAL project (TBD)
-to translate FF7 native files -> JSON.
+1. FF7 native -> JSON
 
-2. Use fbxTranslator.py in THIS project
-to translate JSON -> FBX.
+- Use ff7Translator tool from an EXTERNAL project (TBD)
 
-`python main.py`
+2. JSON -> FBX
+
+- `python main.py`
 
 # FAQ
 

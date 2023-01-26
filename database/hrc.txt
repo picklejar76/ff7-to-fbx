@@ -1,0 +1,384 @@
+AAAA: Cloud
+AAGB: Tifa
+ABDA: Cid
+ABJB: Yuffie
+ACGD: Barret
+ADDA: Red XIII
+AEBC: Cait Sith
+AEHD: Vincent
+AFEC: Bugenhagen
+AFIE: Cloud Parachute
+AGGB: Tifa Parachute
+AHDF: Yuffie Parachute
+AIBA: Barret Parachute
+AIHB: Cid Parachute
+AJIF: Skinny Highwind Crewman   akac
+AKEE: Burly Highwind Crewman    akgb
+ALAD: Rufus
+ALGD: Heidegger
+AMCC: Scarlet           amdf
+ANBD: Hojo          anda
+ANIC: Rude
+AODD: Reno          aofa
+AQGC: Chocobo
+ARFD: Sleeping Old Man
+ASBF: Tanned Midgar Man     asdc
+ASJC: Chocobo Sage
+ATEB: Command Materia
+ATFE: Lucretia in Cave      athb
+AUDA: Handgun
+AUDE: Independent Materia
+AUFF: Aeris
+AVFE: Save Point
+AVHE: Traditional Chest
+AWAE: Green Chest
+AWBE: Summon Materia
+AWCB: Hojo Assistant        awde
+AWHF: President Shinra
+AXDC: Jessie            axef
+AXJA: Tifa Corneo
+AYFB: Barret Sailor
+AZBB: Aeris Corneo
+AZHE: Train Guard       azjb
+BADD: Honey Bee Girl        baee
+BBAB: Sephiroth w/Sword     bbbe
+BBGE: Costa Bar Girl        bbib
+BCCF: Ancient Temple Guard
+BCGD: Shinra Sailor     bcia
+BDCD: Mr. Dolphin
+BDGA: Cat
+BEEC: Mideel Dog (Grey)
+BFCA: Johnny's Dad      bfdb
+BFHE: Sector 7 Shop Owner   bfjb
+BGDC: Shera         bgef
+BGJC: Sephiroth w/Jenny Head    bhaf
+BHFF: Cloud w/Buster Sword
+BIDB: Tifa Cowgirl
+BIJD: Vincent Turk      bjba
+BJFB: Cloud's Mom       bjge
+BKBF: Priscilla         bkdc
+BKHD: Sephiroth         bkja
+BLDE: Tifa's Father's Friend    blfb
+BLJC: Mideel Doctor     bmad
+BMEE: Little Girl       bmgb
+BNAF: ZANGAN
+BNGD: Dyne w/Gun        bnia
+BOCC: Grey Peasant      bodd
+BOHE: Icicle Inn Woman/Mother   bojb
+BPDC: Muscle-Man (Blonde)   bped
+BPJD: Reeve         bqba
+BQFB: Blue Villager     bqge
+BRAF: Cloud's House Occupant    brcc
+BRGD: Motorcycle...
+BRIB: Cloud Motorcycle (Jesus)
+BSFC: Female Villager       bsgd
+BTEC: Female Nurse      btff
+BUAC: Young Tifa
+BUGE: Young Cloud
+BVDA: Tifa's Father     bved
+BWAB: Shinra Soldier
+BWFD: Biggs         bwge
+BXBE: Wedge         bxcf
+BXJB: Train Door
+BYBA: Slab
+BYBF: Panel w/Lights
+BYCD: Catwalk Grating
+BYDD: Gold Chest
+BYGF: Blue Potion
+BYIB: Magic Materia
+BZDA: AIR BUSTER!
+BZHF: Shinra Beta Copter
+CADE: Catwalk Grating
+CAHC: Aeris w/Flower Basket
+CBFE: Red hair hooker       cbhb
+CCBC: Red Punk          cccf
+CCHA: Light Blue Potion
+CDJA: Shinra Manager        cead
+CEFD: Train Drunk
+CFBB: Phoenix Down Hobo
+CFHA: Honey Bee Guard/Punk  cfib
+CGDA: Sector 7 Kid      cged
+CGIF: Red Cap Tifa friend   chac
+CHED: Chole         chga
+CIAC: Hi-Potion Dealer      cibd
+CIGE: Biggs Train Disguise  cihf
+CJCC: Wedge Train Disguise  cjdf
+CJIF: Johnny            ckac
+CKFC: Costa Guy         ckgf
+CLBB: Costa Surf Bro        clcc
+CLGD: Tall Cloud Field
+CMDE: Tall Jessie Field
+CMIF: Tanned Guy        cnac
+CNED: Item Bag
+CNFB: Moving Train (Train Graveyard)
+CNHF: Train Carriage (Train Graveyard)
+COAD: Housewife Purple      cobe
+COGB: Elmyra            cohe
+CPCA: Child, Red dungarees  cpdd
+CPJF: Ifalna
+CQGA: Kid Aeris
+CRCA: Tifa's Father's Friend    crdd
+CRID: Tracksuit Man     csaa
+CSED: Cosmo Miner Repairman csga
+CTBE: Magic Materia
+CTCC: Gold Saucer F. Attendant  ctdf
+CTIB: Hall; Kid Opponent    ctjc
+CUFC: Hall; Black Flexer    cugd
+CVBA: Hall; Burly Flexer    cvcd
+CVGE: Hall; Punk Flexer     cvia
+CWED: Sector 7 Busy-body    cwga
+CYAE: Marlene           cycb
+CYIF: Mr. Duffi-look alike  czaa
+CZED: Avalanche Hideout: Pinball Machine
+CZGB: Yellow Rectangle
+CZGF: Flowers
+DABF: Green Materia
+DAFB: Cologne Lady      dage
+DBEC: Tseng         dbff
+DCCE: Pillar Collapse Hook-Swing
+DCFB: Bright Green Potion
+DCIC: Tanned Guy NPC        dcjf
+DDHA: This guy are sick     ddid
+DEDA: Clothes Shop Son      deed
+DEIE: Dog (Brown)
+DFGD: Tiara Guy         dfhe
+DGCD: Nibel Kids Boy        dgde
+DHAF: Reno (No Face)
+DHGE: Barrel
+DHHF: Ladder
+DHID: Rocky Caltrops
+DIFF: Kid Aeris, Brown Dress
+DJFA: Claw in Golden Saucer Claw-Game
+DJFE: Girder
+DJID: Chocobo Carriage
+DKIE: Metal Flooring (4)
+DKJD: Metal Flooring (7)
+DLFB: Cloud Corneo
+DMCB: Old tanned guy        dmde
+DMIA: Miner/Jon-Tron        dmjb
+DNDF: Black Muscle-man      dnfc
+DNJE: Mukki         doaf
+DOGA: Battle Model-Like Hand
+DOIB: Female Trenchcoat NPC doje
+DPEF: Chef in Wall Market   dpgc
+DQAE: Accessory Maid        dqcb
+DQGD: Diner at Wall Market  dqia
+DRCC: Rocket Technician     drdf
+DRIA: Meal A TEX Wall Market
+DRIF: Meal B TEX Wall Market
+DRJE: Meal C TEX Wall Market
+DSBC: Kalm Chef         dscd
+DSGF: Junon Old Inn Lady    dsic
+DTCE: High-Collar NPC       dteb
+DTIC: Propellor (Green)
+DTJB: Honey Bee Manager     duac
+DUFA: Scotch            dugb
+DVBE: Kotch         dvdb
+DVHF: Don Corneo        dvjc
+DXBD: Shinra Soldier Rifle
+DXJE: Daughter Honey Bee Room   dybb
+DYFD: King Shinra
+DZBB: Knight
+DZGF: Shinra Manager Alt    dzic
+EAGA: Broken Propellor, Climb to Shinra Tower
+EAGF: Swinging Beam, Climb to Shinra Tower
+EAID: Shinra Alpha Copter
+EBCA: Beam of light
+EBEC: Choco Billy       ebfb
+EBJF: Door/Panel Shinra Tower?
+ECAE: Ditto
+ECBF: Turqouise Dress NPC   ecdc
+ECHD: Shinra Tower Glass Elevator
+ECIB: Shinra Secretary      ecje
+EDEA: Woman fl60        edfd
+EDJD: Old Man
+EEFB: Construct, maybe a paddock
+EEGC: Palmer            eehf
+EFFB: Grate Toilet 66th Floor
+EGHE: Masamune (President Shinra Dead)
+EHBE: Tracksuit NPC     ehda
+EHHC: Black-Cloaked Man
+EIAC: Red Woman NPC     eibf
+EIHD: Cloud, Helmet in Hands, on Truck
+EJDC: Zack w/sword      ejfb
+EKBF: MP Cloud
+EKJB: Young Hojo        elae
+ELGC: Young Gast
+EMDF: Corel Miner       emfc
+ENAB: Young Cloud Black Shirt
+EOAC: Key
+EOCE: Vincent Coffin lid
+EOEA: Sephiroth with book   eofd
+EPFB: Materia Keeper
+EQIB: Cowgirl Tifa w/Masamune
+ERHA: Sephy w/Jenny Head    erid
+ESEB: MP Cloud w/Sword
+ETFE: Blue Child, No Face
+EUAF: Red Child, No Face
+EUHB: Crazy old guy!        euia
+EVFE: Elena         evhb
+EWBD: Corel Burly Miner     ewce
+EWJE: Corel Miner Wife      exaf
+EXGA: Small Condor
+EYIE: Rufus' Car
+EZCC: Patchwork Cat
+FAAE: Cyan Potion
+FABB: Red Potion
+FABE: Green Potion
+FACC: Black Propellor/Untex
+FADC: Yellow Potion
+FBBA: Journalist Male
+FBGE: Cait Sith Journalist  fbcd
+FCAF: Journalist Female     fcca
+FCGD: Cameraman         fcia
+FEEA: Yuffie Journalist
+FFEC: Small Green Fish
+FFHA: Yellow/Red Shoal
+FGAE: Shark
+FGEC: Metal Door
+FGFB: Crane Claw
+FGHF: Huge Materia Capsule Underwater Reactor
+FHAA: Carry Armour
+FHIC: Door/Panel
+FHJB: Door/Panel 1
+FIBA: Bottomswell
+FJAF: Red Light
+FJBD: Lung Meter CPR
+FJCF: Red XIII Soldier Disguise
+FKCA: Jenova Tentacle
+FKDF: Hojo Groupie lying down   fkfa
+FLAC: Costa Entrance Girl   flbf
+FLGE: Costa Beach girl      flhf
+FMCC: Snorkel Kid       fmdf
+FMIB: Swimsuit kid      fmje
+FNDF: Football
+FNEF: Sector 7 Wep Shop Shooter
+FOBE: Layabout          fodb
+FPCB: Catastrophe Corel girl    fpde
+FQAB: Long Train, Corel Chase
+FQBB: Cid's Train, Corel Chase
+FQCB: Barret, Corel Flashback
+FQJB: Dyne, Corel Flashback frae
+FRGD: Corel Mayor
+FSDD: Pink Potion
+FSGE: Corel Miner, slumped  fsib
+FTCF: Corel Miner       ftea
+FTIC: Corel Miner, female   ftjf
+FUFE: Corel Miner/Punk      fuhb
+FVED: Mr. Coates        fvga
+FWAE: Ester         fwcb
+FWGF: Dyne's Pendant
+FXJC: Gold Saucer Guard     fyaf
+FZCC: EDK
+GABE: Play Wizard       gacf
+GAJC: Dio           gbad
+GBIA: G.Saucer Bird-Suit
+GCBD: Male Attendant        gcda
+GCHC: G.Saucer Coaster
+GCJC: Gondola Texture
+GDIC: Bat
+GEBB: Hotel Greeter/Lurch   gece
+GEHD: Hotel Desk/Igor       geja
+GFDF: Mr. Hangman       gfje
+GGEF: Elixir Cabinet Door-right
+GGFE: Ditto, Left door
+GGHE: Hand Pointer Tex
+GGID: Purple shaft of light
+GGJC: Yellow shaft of light (Battle Square)
+GHAD: Battle Square, f.kicker   ghca
+GHGF: G.Saucer Capture Device
+GIHA: ZANGIEF!          giid
+GJAB: E.HONDA!          gjbe
+GJCF: Basketball
+GJEB: Speed Bike, Field
+GJHA: 3D Battler, Rookie    gjid
+GKCF: 3D Battler, Luchadore gkec
+GKID: 3D Battler, Afro Thunder  glaa
+GLEB: 3D Battler, Super Hero    glfc
+GLJD: Mog
+GMHA: Pink Mog
+GNCA: Bright Mog
+GNGB: Yellow Mog
+GOAC: Pink Mog
+GOFD: Choco Square Teller   goha
+GPCD: Joe           gpde
+GPJB: Blue Jockey       gqab
+GQFE: Green Jockey      gqhb
+GRCC: Choco Elevator (From Corel Prison)
+GRGA: Cosmo Canyon Greeter  grhd
+GSBE: Cosmo Kid         gsdb
+GSHC: Cosmo Propellor
+GSJE: Cosmo Mother      gtbb
+GTFC: Cosmo Elderly Lady    gtgf
+GUBA: Cosmo Kid Boy     gucd
+GUHC: Cosmo Door
+GUIB: Cosmo Door
+GUJC: Glacier Map
+GVAE: Radar Dish
+GVBC: Weather Vane
+GVCE: Yellow Huge Materia
+GVDC: Green Huge Materia
+GVEA: Red Huge Materia
+GVEE: Blue Huge Materia
+GWAA: Cosmo Observatory Planet/Two Moons
+GWCC: Bugenhagen Lying down (Green orb missing)
+GWIB: Green orb
+GWIF: Rocket Town Citizen   gxac
+GXEF: Rocket Town Bored Citizen gxgc
+GYDC: Rocket Town Citizen   gyef
+GZAD: Young Cid
+GZGB: Door Base; Rocket
+GZHA: Door Base; Rocket
+GZHF: Rocket Technician     gzjc
+HAGB: Rocket Huge Materia Capsule
+HCEF: Debris, pins Cid
+HDBB: Wutai Citizen male    hdce
+HDGF: Wutai Citizen, Staniv hdic
+HECD: Wutai Citizen, Chekhov    heea
+HEIB: Wutai Citizen female  heje
+HFFB: Wutai Citizen, Gorki  hfge
+HGAF: Wutai Citizen, Shake  hgcc
+HGIA: Yuffie House Cage
+HGJD: Godo
+HHGE: Wutai Door
+HHHD: Wutai Door
+HHIC: Wutai Panel
+HHJF: Corneo Ninja
+HJDC: Component, Gong-mechanism possibly
+HJGA: Ancient Temple Chest
+HJHF: Rolling Stone
+HJIE: Clock, Minute/Sec Hand
+HJJD: Clock, Minute/sec Hand
+HKAC: Clock, Hour Hand
+HKBB: Clock core, base
+HKEA: Clock Core, mouth
+HKHB: Temple Puzzle
+HKJC: Demon Wall
+HLFC: Green Digger          hlgf
+HMBE: Purple Digger     hmdb
+HMIF: Ancient Forest, Fly
+HNAF: Ancient FOrest, Frog
+HNEB: Ancient Forest, Tongue Feeler
+HNIF: Ancient Forest, Bee Hive
+HOBD: Ancient Key
+HPCE: Icicle Kid Girl       hpdf
+HPIB: Icicle Man        hpje
+HQGC: Blue Panel
+HQHC: Snowboard
+HRAE: Red Flag
+HRCE: Blue Chest
+HREE: Tumbling Rock
+HRFF: Ice Stalagmite
+HRHA: Ice Stalagmite
+HRHE: Ice Stalagmite
+HSEB: Ice Stalagmite
+HSJD: Ultimate Weapon
+HTJE: Handicapable Cloud
+HVCF: Train Cars, Corel Chase
+HVJF: Red XIII Para Freefall
+HWIB: Parachute open texture
+HXBC: Proud Clod
+HYFD: Jenova Synthesis
+IAJD: Yellow Projectile (Diamond Wep Attacks)
+IBAD: Zack, no sword        ibca
+IBGD: Zack, w/sword     ibia

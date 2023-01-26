@@ -1,0 +1,421 @@
+    # # create node for our camera in the scene
+    # fbxCameraNode = fbx.FbxNode.Create(fbxScene, 'cameraNode')
+    # fbxCamera = fbx.FbxCamera.Create(fbxScene, 'camera')
+    # fbxCameraNode.SetNodeAttribute(fbxCamera)
+    # fbxRootNode.AddChild(fbxCameraNode)
+    # fbxScene.GetGlobalSettings().SetDefaultCamera(fbxCamera.GetName());
+    # createAnimation(fbxCameraNode, 'camera', 500.0)
+
+
+
+    # # create node for our camera in the scene
+    # fbxCameraNode = fbx.FbxNode.Create(fbxScene, 'cameraNode')
+    # fbxCamera = fbx.FbxCamera.Create(fbxScene, 'camera')
+    # fbxCameraNode.SetNodeAttribute(fbxCamera)
+    # fbxRootNode.AddChild(fbxCameraNode)
+    # fbxScene.GetGlobalSettings().SetDefaultCamera(fbxCamera.GetName());
+    # createAnimation(fbxCameraNode, 'camera', 500.0)
+
+    FBXSDK_CURVENODE_COMPONENT_X = 'X'
+    FBXSDK_CURVENODE_COMPONENT_Y = 'Y'
+    FBXSDK_CURVENODE_COMPONENT_Z = 'Z'
+
+# def reverseXYZMatrix(m00, m01, m02, m10, m11, m12, m20, m21, m22):
+#     # from https://pdfs.semanticscholar.org/6681/37fa4b875d890f446e689eea1e334bcf6bf6.pdf
+#     x = math.atan2(m12, m22)
+#     c2 = math.sqrt(m00*m00 + m01*m01)
+#     y = math.atan2(-m02, c2)
+#     s1 = math.sin(x)
+#     c1 = math.cos(x)
+#     z = math.atan2(s1*m20 - c1*m10, c1*m11 - s1*m21)
+#     return (math.degrees(x), math.degrees(y), math.degrees(z))
+
+# def translateYXZ2XYZ(yxzRotation):
+#     x = math.radians(yxzRotation[0])
+#     y = math.radians(yxzRotation[1])
+#     z = math.radians(yxzRotation[2])
+#     c1 = math.cos(x)
+#     c2 = math.cos(y)
+#     c3 = math.cos(z)
+#     s1 = math.sin(x)
+#     s2 = math.sin(y)
+#     s3 = math.sin(z)
+#     # m00 =  c1*c3 - s1*s2*s3
+#     # m01 = -c2*s1
+#     # m02 =  c1*s3 + c3*s1*s2
+#     # m10 =  c3*s1 + c1*s2*s3
+#     # m11 =  c1*c2
+#     # m12 =  s1*s3 - c1*c3*s2
+#     # m20 = -c2*s3
+#     # m21 =  s2
+#     # m22 = c2*c3
+#
+#     # m00 =  c1*c3 + s1*s2*s3
+#     # m01 =  c3*s1*s2 - c1*s3
+#     # m02 =  c2*s1
+#     # m10 =  c2*s3
+#     # m11 =  c2*c3
+#     # m12 = -s2
+#     # m20 =  c1*s2*s3 - c3*s1
+#     # m21 =  c1*c3*s2 + s1*s3
+#     # m22 =  c1*c2
+#
+#     # wolfram alpha ZYX: (no effect)
+#     # m00 =  c2*c3
+#     # m01 =  c3*s1*s2 + c1*s3
+#     # m02 =  s1*s3 - c1*c3*s2
+#     # m10 = -c2*s3
+#     # m11 =  c1*c3 - s1*s2*s3
+#     # m12 =  c3*s1 + c1*s2*s3
+#     # m20 =  s2
+#     # m21 =  -c2*s1
+#     # m22 =  c1*c2
+#
+#     # wolfram alpha YXZ:
+#     # m00 =  c2*c3 - s1*s2*s3
+#     # m01 =  c3*s1*s2 + c2*s3
+#     # m02 = -c1*s2
+#     # m10 = -c1*s3
+#     # m11 =  c1*c3
+#     # m12 =  s1
+#     # m20 =  c3*s2 + c2*s1*s3
+#     # m21 =  s2*s3 - c2*c3*s1
+#     # m22 =  c1*c2
+#
+#     # wolfram alpha ZXY:
+#     m00 =  c2*c3 + s1*s2*s3
+#     m01 =  c1*c3
+#     m02 =  c2*s1*s3 - c3*s2
+#     m10 =  c3*s1*s2 - c2*s3
+#     m11 =  c1*c3
+#     m12 =  c2*c3*s1 + s2*s3
+#     m20 =  c1*s2
+#     m21 =  -s1
+#     m22 =  c1*c2
+#     xyzRotation = reverseXYZMatrix(m00, m01, m02, m10, m11, m12, m20, m21, m22)
+#     return yxzRotation # xyzRotation
+
+
+
+python create-ff7-animation-fbx.py aafe
+python create-ff7-animation-fbx.py aaff
+python create-ff7-animation-fbx.py agee
+python create-ff7-animation-fbx.py agef
+python create-ff7-animation-fbx.py agfa
+python create-ff7-animation-fbx.py agfb
+python create-ff7-animation-fbx.py ajdc
+python create-ff7-animation-fbx.py ajdd
+python create-ff7-animation-fbx.py ajde
+python create-ff7-animation-fbx.py ajdf
+python create-ff7-animation-fbx.py ajea
+python create-ff7-animation-fbx.py ajeb
+python create-ff7-animation-fbx.py ajec
+python create-ff7-animation-fbx.py apec
+python create-ff7-animation-fbx.py aped
+python create-ff7-animation-fbx.py apee
+python create-ff7-animation-fbx.py apje
+python create-ff7-animation-fbx.py apjf
+python create-ff7-animation-fbx.py aqaa
+python create-ff7-animation-fbx.py aqbf
+python create-ff7-animation-fbx.py aqca
+python create-ff7-animation-fbx.py aqcb
+python create-ff7-animation-fbx.py aqcc
+python create-ff7-animation-fbx.py aqcd
+python create-ff7-animation-fbx.py aqce
+python create-ff7-animation-fbx.py aqcf
+python create-ff7-animation-fbx.py aqee
+python create-ff7-animation-fbx.py aqef
+python create-ff7-animation-fbx.py aqfa
+python create-ff7-animation-fbx.py aqfb
+python create-ff7-animation-fbx.py aqfc
+python create-ff7-animation-fbx.py aued
+python create-ff7-animation-fbx.py auee
+python create-ff7-animation-fbx.py avje
+python create-ff7-animation-fbx.py awab
+python create-ff7-animation-fbx.py awac
+
+
+
+boneIndex: 0
+boneId: bone-0
+boneName: hip
+parentBoneName: root
+parentBoneId: bone-root
+animationFrame: {'boneRotations': [{'z': 0.0, 'x': 270.0, 'y': 0.0}, {'z': 0.0, 'x': 351.5625, 'y': 0.0}, {'z': 0.0, 'x': 8.4375, 'y': 0.0}, {'z': 77.34375, 'x': 351.5625, 'y': 324.84375}, {'z': 30.9375, 'x': 309.375, 'y': 334.6875}, {'z': 67.5, 'x': 298.125, 'y': 19.6875}, {'z': 0.0, 'x': 0.0, 'y': 0.0}, {'z': 0.0, 'x': 0.0, 'y': 0.0}, {'z': 282.65625, 'x': 350.15625, 'y': 35.15625}, {'z': 329.0625, 'x': 309.375, 'y': 25.3125}, {'z': 298.125, 'x': 292.5, 'y': 333.28125}, {'z': 0.0, 'x': 0.0, 'y': 0.0}, {'z': 0.0, 'x': 0.0, 'y': 0.0}, {'z': 180.0, 'x': 0.0, 'y': 251.71875}, {'z': 90.0, 'x': 278.4375, 'y': 341.71875}, {'z': 0.0, 'x': 0.0, 'y': 0.0}, {'z': 80.15625, 'x': 310.78125, 'y': 291.09375}, {'z': 180.0, 'x': 0.0, 'y': 108.28125}, {'z': 270.0, 'x': 278.4375, 'y': 19.6875}, {'z': 0.0, 'x': 0.0, 'y': 0.0}, {'z': 279.84375, 'x': 317.8125, 'y': 68.90625}], 'rootTranslation': {'z': 0.077069275, 'x': 0.0, 'y': 13.535284}, 'rootRotation': {'z': 0.0, 'x': 0.0, 'y': 0.0}}
+boneRotation: {'z': 0.0, 'x': 270.0, 'y': 0.0}
+boneRotation is x: 270.0 , y: 0.0 , z: 0.0
+to do: handle nonempty bone: hip
+boneIndex: 1
+boneId: bone-1
+boneName: chest
+parentBoneName: hip
+Traceback (most recent call last):
+  File "create-ff7-skeleton-and-animation-fbx.py", line 287, in <module>
+    bone = makeBoneNodeFromBoneData(boneData, animData)
+  File "create-ff7-skeleton-and-animation-fbx.py", line 100, in makeBoneNodeFromBoneData
+    parentBoneId = 'bone-' + parentBoneData['boneIndex']
+TypeError: Can't convert 'int' object to str implicitly
+
+C:\opt\ff7-to-fbx>python create-ff7-skeleton-and-animation-fbx.py aaaa aafe
+boneIndex: 0
+boneId: bone-0
+boneName: hip
+parentBoneName: root
+parentBoneId: bone-root
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 0.0, 'y': 0.0, 'x': 270.0}
+boneRotation is x: 270.0 , y: 0.0 , z: 0.0
+to do: handle nonempty bone: hip
+boneIndex: 1
+boneId: bone-1
+boneName: chest
+parentBoneName: hip
+parentBoneId: bone-0
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 0.0, 'y': 0.0, 'x': 351.5625}
+boneRotation is x: 351.5625 , y: 0.0 , z: 0.0
+to do: handle nonempty bone: chest
+boneIndex: 2
+boneId: bone-2
+boneName: head
+parentBoneName: chest
+parentBoneId: bone-1
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 0.0, 'y': 0.0, 'x': 8.4375}
+boneRotation is x: 8.4375 , y: 0.0 , z: 0.0
+to do: handle nonempty bone: head
+boneIndex: 3
+boneId: bone-3
+boneName: l_chest
+parentBoneName: hip
+parentBoneId: bone-0
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}
+boneRotation is x: 351.5625 , y: 324.84375 , z: 77.34375
+to do: handle empty bone: l_chest
+boneIndex: 4
+boneId: bone-4
+boneName: l_collar
+parentBoneName: l_chest
+parentBoneId: bone-3
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 30.9375, 'y': 334.6875, 'x': 309.375}
+boneRotation is x: 309.375 , y: 334.6875 , z: 30.9375
+to do: handle empty bone: l_collar
+boneIndex: 5
+boneId: bone-5
+boneName: l_uparm
+parentBoneName: l_collar
+parentBoneId: bone-4
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 67.5, 'y': 19.6875, 'x': 298.125}
+boneRotation is x: 298.125 , y: 19.6875 , z: 67.5
+to do: handle nonempty bone: l_uparm
+boneIndex: 6
+boneId: bone-6
+boneName: l_foarm
+parentBoneName: l_uparm
+parentBoneId: bone-5
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 0.0, 'y': 0.0, 'x': 0.0}
+boneRotation is x: 0.0 , y: 0.0 , z: 0.0
+to do: handle nonempty bone: l_foarm
+boneIndex: 7
+boneId: bone-7
+boneName: l_hand
+parentBoneName: l_foarm
+parentBoneId: bone-6
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 0.0, 'y': 0.0, 'x': 0.0}
+boneRotation is x: 0.0 , y: 0.0 , z: 0.0
+to do: handle nonempty bone: l_hand
+boneIndex: 8
+boneId: bone-8
+boneName: r_chest
+parentBoneName: hip
+parentBoneId: bone-0
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}
+boneRotation is x: 350.15625 , y: 35.15625 , z: 282.65625
+to do: handle empty bone: r_chest
+boneIndex: 9
+boneId: bone-9
+boneName: r_collar
+parentBoneName: r_chest
+parentBoneId: bone-8
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 329.0625, 'y': 25.3125, 'x': 309.375}
+boneRotation is x: 309.375 , y: 25.3125 , z: 329.0625
+to do: handle empty bone: r_collar
+boneIndex: 10
+boneId: bone-10
+boneName: r_uparm
+parentBoneName: r_collar
+parentBoneId: bone-9
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 298.125, 'y': 333.28125, 'x': 292.5}
+boneRotation is x: 292.5 , y: 333.28125 , z: 298.125
+to do: handle nonempty bone: r_uparm
+boneIndex: 11
+boneId: bone-11
+boneName: r_foarm
+parentBoneName: r_uparm
+parentBoneId: bone-10
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 0.0, 'y': 0.0, 'x': 0.0}
+boneRotation is x: 0.0 , y: 0.0 , z: 0.0
+to do: handle nonempty bone: r_foarm
+boneIndex: 12
+boneId: bone-12
+boneName: r_hand
+parentBoneName: r_foarm
+parentBoneId: bone-11
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 0.0, 'y': 0.0, 'x': 0.0}
+boneRotation is x: 0.0 , y: 0.0 , z: 0.0
+to do: handle nonempty bone: r_hand
+boneIndex: 13
+boneId: bone-13
+boneName: l_hip
+parentBoneName: root
+parentBoneId: bone-root
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 180.0, 'y': 251.71875, 'x': 0.0}
+boneRotation is x: 0.0 , y: 251.71875 , z: 180.0
+to do: handle empty bone: l_hip
+boneIndex: 14
+boneId: bone-14
+boneName: l_femur
+parentBoneName: l_hip
+parentBoneId: bone-13
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 90.0, 'y': 341.71875, 'x': 278.4375}
+boneRotation is x: 278.4375 , y: 341.71875 , z: 90.0
+to do: handle nonempty bone: l_femur
+boneIndex: 15
+boneId: bone-15
+boneName: l_tibia
+parentBoneName: l_femur
+parentBoneId: bone-14
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 0.0, 'y': 0.0, 'x': 0.0}
+boneRotation is x: 0.0 , y: 0.0 , z: 0.0
+to do: handle nonempty bone: l_tibia
+boneIndex: 16
+boneId: bone-16
+boneName: l_foot
+parentBoneName: l_tibia
+parentBoneId: bone-15
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}
+boneRotation is x: 310.78125 , y: 291.09375 , z: 80.15625
+to do: handle nonempty bone: l_foot
+boneIndex: 17
+boneId: bone-17
+boneName: r_hip
+parentBoneName: root
+parentBoneId: bone-root
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 180.0, 'y': 108.28125, 'x': 0.0}
+boneRotation is x: 0.0 , y: 108.28125 , z: 180.0
+to do: handle empty bone: r_hip
+boneIndex: 18
+boneId: bone-18
+boneName: r_femur
+parentBoneName: r_hip
+parentBoneId: bone-17
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 270.0, 'y': 19.6875, 'x': 278.4375}
+boneRotation is x: 278.4375 , y: 19.6875 , z: 270.0
+to do: handle nonempty bone: r_femur
+boneIndex: 19
+boneId: bone-19
+boneName: r_tibia
+parentBoneName: r_femur
+parentBoneId: bone-18
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 0.0, 'y': 0.0, 'x': 0.0}
+boneRotation is x: 0.0 , y: 0.0 , z: 0.0
+to do: handle nonempty bone: r_tibia
+boneIndex: 20
+boneId: bone-20
+boneName: r_foot
+parentBoneName: r_tibia
+parentBoneId: bone-19
+animationFrame: {'boneRotations': [{'z': 0.0, 'y': 0.0, 'x': 270.0}, {'z': 0.0, 'y': 0.0, 'x': 351.5625}, {'z': 0.0, 'y': 0.0, 'x': 8.4375}, {'z': 77.34375, 'y': 324.84375, 'x': 351.5625}, {'z': 30.9375, 'y': 334.6875, 'x': 309.375}, {'z': 67.5, 'y': 19.6875, 'x': 298.125}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 282.65625, 'y': 35.15625, 'x': 350.15625}, {'z': 329.0625, 'y': 25.3125, 'x': 309.375}, {'z': 298.125, 'y': 333.28125, 'x': 292.5}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 180.0, 'y': 251.71875, 'x': 0.0}, {'z': 90.0, 'y': 341.71875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 80.15625, 'y': 291.09375, 'x': 310.78125}, {'z': 180.0, 'y': 108.28125, 'x': 0.0}, {'z': 270.0, 'y': 19.6875, 'x': 278.4375}, {'z': 0.0, 'y': 0.0, 'x': 0.0}, {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}], 'rootTranslation': {'z': 0.077069275, 'y': 13.535284, 'x': 0.0}, 'rootRotation': {'z': 0.0, 'y': 0.0, 'x': 0.0}}
+boneRotation: {'z': 279.84375, 'y': 68.90625, 'x': 317.8125}
+boneRotation is x: 317.8125 , y: 68.90625 , z: 279.84375
+to do: handle nonempty bone: r_foot
+filling curve xltCurveX with values: [0.0]
+filling curve xltCurveY with values: [13.535284]
+filling curve xltCurveZ with values: [0.077069275]
+filling curve rotCurveY with values: [0.0]
+filling curve rotCurveX with values: [0.0]
+filling curve rotCurveZ with values: [0.0]
+filling curve fbxCurveY with values: [0.0]
+filling curve fbxCurveX with values: [270.0]
+filling curve fbxCurveZ with values: [0.0]
+filling curve fbxCurveY with values: [0.0]
+filling curve fbxCurveX with values: [351.5625]
+filling curve fbxCurveZ with values: [0.0]
+filling curve fbxCurveY with values: [0.0]
+filling curve fbxCurveX with values: [8.4375]
+filling curve fbxCurveZ with values: [0.0]
+filling curve fbxCurveY with values: [324.84375]
+filling curve fbxCurveX with values: [351.5625]
+filling curve fbxCurveZ with values: [77.34375]
+filling curve fbxCurveY with values: [334.6875]
+filling curve fbxCurveX with values: [309.375]
+filling curve fbxCurveZ with values: [30.9375]
+filling curve fbxCurveY with values: [19.6875]
+filling curve fbxCurveX with values: [298.125]
+filling curve fbxCurveZ with values: [67.5]
+filling curve fbxCurveY with values: [0.0]
+filling curve fbxCurveX with values: [0.0]
+filling curve fbxCurveZ with values: [0.0]
+filling curve fbxCurveY with values: [0.0]
+filling curve fbxCurveX with values: [0.0]
+filling curve fbxCurveZ with values: [0.0]
+filling curve fbxCurveY with values: [35.15625]
+filling curve fbxCurveX with values: [350.15625]
+filling curve fbxCurveZ with values: [282.65625]
+filling curve fbxCurveY with values: [25.3125]
+filling curve fbxCurveX with values: [309.375]
+filling curve fbxCurveZ with values: [329.0625]
+filling curve fbxCurveY with values: [333.28125]
+filling curve fbxCurveX with values: [292.5]
+filling curve fbxCurveZ with values: [298.125]
+filling curve fbxCurveY with values: [0.0]
+filling curve fbxCurveX with values: [0.0]
+filling curve fbxCurveZ with values: [0.0]
+filling curve fbxCurveY with values: [0.0]
+filling curve fbxCurveX with values: [0.0]
+filling curve fbxCurveZ with values: [0.0]
+filling curve fbxCurveY with values: [251.71875]
+filling curve fbxCurveX with values: [0.0]
+filling curve fbxCurveZ with values: [180.0]
+filling curve fbxCurveY with values: [341.71875]
+filling curve fbxCurveX with values: [278.4375]
+filling curve fbxCurveZ with values: [90.0]
+filling curve fbxCurveY with values: [0.0]
+filling curve fbxCurveX with values: [0.0]
+filling curve fbxCurveZ with values: [0.0]
+filling curve fbxCurveY with values: [291.09375]
+filling curve fbxCurveX with values: [310.78125]
+filling curve fbxCurveZ with values: [80.15625]
+filling curve fbxCurveY with values: [108.28125]
+filling curve fbxCurveX with values: [0.0]
+filling curve fbxCurveZ with values: [180.0]
+filling curve fbxCurveY with values: [19.6875]
+filling curve fbxCurveX with values: [278.4375]
+filling curve fbxCurveZ with values: [270.0]
+filling curve fbxCurveY with values: [0.0]
+filling curve fbxCurveX with values: [0.0]
+filling curve fbxCurveZ with values: [0.0]
+filling curve fbxCurveY with values: [68.90625]
+filling curve fbxCurveX with values: [317.8125]
+filling curve fbxCurveZ with values: [279.84375]
+saving to: C:\opt\ff7-to-fbx\fbx\animations\aafe.a.fbx
+Export SUCCESS to: C:\opt\ff7-to-fbx\fbx\animations\aafe.a.fbx
+
+C:\opt\ff7-to-fbx>
